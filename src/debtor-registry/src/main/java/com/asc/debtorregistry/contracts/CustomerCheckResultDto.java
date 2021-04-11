@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class CustomerCheckResultDto {
     private String customerTaxId;
-    private Boolean isRegisteredDebtor;
+    private boolean isRegisteredDebtor;
 
     public static CustomerCheckResultDto debtorCustomer(String customerTaxId){
         return new CustomerCheckResultDto(customerTaxId, true);
